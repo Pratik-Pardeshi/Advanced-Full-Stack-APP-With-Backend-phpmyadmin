@@ -1,0 +1,137 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.form-container:hover {
+    transform: scale(1.05);
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ff6363;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff6363;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff6363;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff3b3b;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    width: 100%;
+}
+
+#welcome-message {
+    display: none;
+    font-size: 24px;
+    color: #ff6363;
+    margin-top: 20px;
+    animation: fadeIn 2s forwards;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
